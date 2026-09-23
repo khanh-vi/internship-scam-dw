@@ -1,0 +1,5 @@
+recruiter_email_type,suspicious_email_domain,rows,pct_of_rows
+Corporate,0,749433,74.9433
+Corporate,1,0,0.0
+Free,0,0,0.0
+Free,1,250567,25.0567

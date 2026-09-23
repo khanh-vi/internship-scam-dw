@@ -1,0 +1,36 @@
+column_name,staging_dtype,pandas_dtype,non_null_count,null_count,null_pct,unique_count,min,max,source_or_derived,transformation,value_digest_sha256
+posting_date,DATE NOT NULL,datetime64[us],1000000,0,0.0,3287,2018-01-01,2026-12-31,Source,"Parsed as a real date, emitted as ISO YYYY-MM-DD (approved representation change; no value re-dated, no row removed)",7abb04e2b95d0a88fa5c2a976891606ff59adff752d7c2e99443bdec9b24a6e8
+internship_title,VARCHAR(32) NOT NULL,str,1000000,0,0.0,9,,,Source,None - preserved verbatim from source,4a70d0c63046493beb539c798390773adb3a8c8c76b4954eeb01669a10a74e98
+employment_type,VARCHAR(16) NOT NULL,str,1000000,0,0.0,4,,,Source,None - preserved verbatim from source,61dfa2cd9c24542e13601a35bed788719df808b7503626be18aa788662239343
+work_mode,VARCHAR(16) NOT NULL,str,1000000,0,0.0,3,,,Source,None - preserved verbatim from source,c5014a5028a893080d1bc5c8cef946c248ab4b0401ad8a0beb5a401dd3d844c6
+industry,VARCHAR(24) NOT NULL,str,1000000,0,0.0,9,,,Source,None - preserved verbatim from source,2c7ac727b0777b402a0e2f75c7fa081ee9204f9d978a7067b3bdff6f5c01d717
+location,VARCHAR(24) NOT NULL,str,1000000,0,0.0,9,,,Source,None - preserved verbatim from source,7df669bf70ae8c0fb3c3ff07427f8ecb3baf5e38198ed3cb1ea8f5f4dbb53632
+company_name,VARCHAR(64) NOT NULL,str,1000000,0,0.0,535938,,,Source,None - preserved verbatim from source,990528ea81d69e133f3a741d0edb6928309fa19b0b2ed715cc5ab887ea3f38ec
+company_size,VARCHAR(16) NOT NULL,str,1000000,0,0.0,4,,,Source,None - preserved verbatim from source,1da43f2693bcb87278b3477403bfe1c558cd00a2d85bfaddea43e87799f5ec31
+company_age,SMALLINT NULL,Int64,990000,10000,1.0,39,1,39,Source,None - value preserved; typed as nullable integer (0 non-integral source values); NULL preserved as NULL,5434bba741b795c85d9fa54351ee6eec8bb602b7411937e3d8b6dab4efcca86a
+linkedin_presence,SMALLINT NOT NULL,int64,1000000,0,0.0,2,0,1,Source,None - preserved verbatim from source,7e3a0bcd9626da75e52b46ee6f6151560d8b959d53860611d41cd4befdf62039
+website_available,SMALLINT NOT NULL,int64,1000000,0,0.0,2,0,1,Source,None - preserved verbatim from source,37b17e9f67299bbbba1165a63d7ccf330f22e4064f65035c7e6385a985a7e3c6
+domain_age_months,SMALLINT NOT NULL,int64,1000000,0,0.0,500,1,500,Source,None - preserved verbatim from source,a812053cc3672a77222c1a4e1ffd1b044f2514b6d7c354465b97686ec8eed3c7
+verification_status,SMALLINT NOT NULL,int64,1000000,0,0.0,2,0,1,Source,None - preserved verbatim from source,0f63c5e49d1aa9467715d60bbd9ee4dca7b858fcf37145ff11f15b14ac8bc85e
+stipend,INTEGER NULL,Int64,990000,10000,1.0,73830,2000,110428,Source,None - value preserved; typed as nullable integer (0 non-integral source values); NULL preserved as NULL,454a74b87050957cc98a62571218fb890f9572c10534ed79ce80800c092c4745
+unrealistic_salary_flag,SMALLINT NOT NULL,int64,1000000,0,0.0,1,0,0,Source,None - preserved verbatim from source,6506614505e113daab08b3f894ca46d4d61867c7b007c413b47a669abe8aae67
+payment_required,SMALLINT NOT NULL,int64,1000000,0,0.0,2,0,1,Source,None - preserved verbatim from source,932a5648a16362d7cdcf026f918a9e7870eac3250d4e90000a377c40a5c131f7
+registration_fee,INTEGER NOT NULL,int64,1000000,0,0.0,4951,0,4999,Source,None - preserved verbatim from source,3e4b5b577eb9fd40212b1cc80f0551bec402dd0ead38086cb0b7303b404ee139
+job_description_length,SMALLINT NOT NULL,int64,1000000,0,0.0,3946,100,5000,Source,None - preserved verbatim from source,6348909b656464dacf3584ef548af161d161b8dac2925cc0574301a5c45882c6
+grammatical_errors,SMALLINT NOT NULL,int64,1000000,0,0.0,15,0,14,Source,None - preserved verbatim from source,d48479b4b610fd1175d06d888de70ead96a5128146b803007860b547dcd7e0c0
+vague_description_score,SMALLINT NOT NULL,int64,1000000,0,0.0,101,0,100,Source,None - preserved verbatim from source,5195f79f39f3cbd5f5bd4eb653461121174ba832d0399ac8bac7ccd9706c2940
+urgency_score,SMALLINT NOT NULL,int64,1000000,0,0.0,101,0,100,Source,None - preserved verbatim from source,5ac3beef695122a13fc9c532a839deb1dacf05ced44d81053bac9b03d25fdecd
+keyword_spam_score,SMALLINT NOT NULL,int64,1000000,0,0.0,101,0,100,Source,None - preserved verbatim from source,400a8ef9795ffaee9ba77928e4e0f3fea9ba7cdc490fd0f7a49278bfdf25c194
+fake_certificate_offer,SMALLINT NOT NULL,int64,1000000,0,0.0,2,0,1,Source,None - preserved verbatim from source,72fa724ff6788a847a2300bfe9de6258f8d3e8ad6488991a1eb585011d444b33
+recruiter_experience_years,"DECIMAL(3,1) NOT NULL",float64,1000000,0,0.0,183,0.0,19.6,Source,None - preserved verbatim from source,bec44830c39f0441bd30d9210125be1cb627f7cc2399da6dcd9369b661520ac7
+recruiter_email_type,VARCHAR(16) NOT NULL,str,1000000,0,0.0,2,,,Source,None - preserved verbatim from source,c830f447e02c538e825615eb6cc81569bd37fe6b8b769e59668189ab87941187
+suspicious_email_domain,SMALLINT NOT NULL,int64,1000000,0,0.0,2,0,1,Source,None - preserved verbatim from source,126c5b4d4a53346d7af18aaf3a69b78ffa08d3c4deb75ef5d73dea8e2e7906ec
+recruiter_response_time_hours,"DECIMAL(3,1) NOT NULL",float64,1000000,0,0.0,595,1.0,63.9,Source,None - preserved verbatim from source,37b9e97e065f3da88f265b8fbc47aa65dbde1e1dd8b64bc9ebcca8627b23d3b2
+social_media_presence,SMALLINT NOT NULL,int64,1000000,0,0.0,2,0,1,Source,None - preserved verbatim from source,623f33709c52662021c91b4ca77b4b2bb9e5356ed798bfbb1887d92c324f8f14
+emotional_manipulation_score,SMALLINT NOT NULL,int64,1000000,0,0.0,101,0,100,Source,None - preserved verbatim from source,52bf58c5d66c464c534395e56d7ad83b0b441407f4626f1be0d209facac3fdaf
+phishing_language_score,SMALLINT NOT NULL,int64,1000000,0,0.0,100,0,100,Source,None - preserved verbatim from source,8739376a44761272b0a8946c2677b2619197ad211c601abce9a5968fc2a5f959
+trust_signal_score,"DECIMAL(4,1) NULL",float64,990000,10000,1.0,1001,0.0,100.0,Source,None - preserved verbatim from source,49c2af66574854021b2a70135134e441624ffb78a838847f743263ae7aca3a0e
+fraud_score,"DECIMAL(4,1) NOT NULL",float64,1000000,0,0.0,1001,0.0,100.0,Source,None - preserved verbatim from source,8f725146de7ef400edc58263abf01a2258435eed41b7b3c06db00bcf5654ccd6
+is_fake_posting,SMALLINT NOT NULL,int64,1000000,0,0.0,2,0,1,Source,None - preserved verbatim from source,2c8095f4de609aee7fe4803fbe84661c10cb5d12aab4c30bd9d386109301a971
+source_row_id,INTEGER NOT NULL,int64,1000000,0,0.0,1000000,1,1000000,Derived,Derived: lineage,e8ddfd86979686cc715a93499b29ca9802686b8cde04e4647429433b4eb16e6f
+is_future_posting,SMALLINT NOT NULL,int64,1000000,0,0.0,2,0,1,Derived,Derived: data-quality flag,556d892511dea37ce116817311b4376884f2fbb4306fe05ff7fbdd09c81ada0c

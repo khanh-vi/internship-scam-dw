@@ -1,0 +1,226 @@
+internship_title,attribute,value,rows,pct_within_title
+AI Research Intern,industry,AI,12443,11.165549483583241
+AI Research Intern,industry,Cybersecurity,12350,11.082097253255085
+AI Research Intern,industry,E-Commerce,12231,10.975314291867445
+AI Research Intern,industry,EdTech,12526,11.240028355811596
+AI Research Intern,industry,FinTech,12439,11.161960140343322
+AI Research Intern,industry,Gaming,12497,11.21400561732217
+AI Research Intern,industry,Healthcare,12378,11.10722265593453
+AI Research Intern,industry,Marketing,12287,11.025565097226336
+AI Research Intern,industry,Software,12290,11.028257104656275
+Backend Developer,industry,AI,12521,11.287501802971297
+Backend Developer,industry,Cybersecurity,12328,11.113515072840041
+Backend Developer,industry,E-Commerce,12274,11.064834847829223
+Backend Developer,industry,EdTech,12379,11.159490840905812
+Backend Developer,industry,FinTech,12265,11.056721476994086
+Backend Developer,industry,Gaming,12253,11.045903649213905
+Backend Developer,industry,Healthcare,12379,11.159490840905812
+Backend Developer,industry,Marketing,12294,11.082864560796192
+Backend Developer,industry,Software,12235,11.029676907543632
+Cloud Engineer,industry,AI,12509,11.220645485369836
+Cloud Engineer,industry,Cybersecurity,12387,11.11121077842163
+Cloud Engineer,industry,E-Commerce,12398,11.12107784216286
+Cloud Engineer,industry,EdTech,12532,11.241276618646957
+Cloud Engineer,industry,FinTech,12267,11.003570083062737
+Cloud Engineer,industry,Gaming,12401,11.123768859546832
+Cloud Engineer,industry,Healthcare,12297,11.03048025690246
+Cloud Engineer,industry,Marketing,12333,11.062772465510127
+Cloud Engineer,industry,Software,12358,11.085197610376563
+Cybersecurity Analyst,industry,AI,12570,11.283763768076913
+Cybersecurity Analyst,industry,Cybersecurity,12276,11.019847574933348
+Cybersecurity Analyst,industry,E-Commerce,12274,11.01805222668067
+Cybersecurity Analyst,industry,EdTech,12304,11.04498245047083
+Cybersecurity Analyst,industry,FinTech,12328,11.066526629502958
+Cybersecurity Analyst,industry,Gaming,12498,11.21913123098053
+Cybersecurity Analyst,industry,Healthcare,12217,10.966884801479367
+Cybersecurity Analyst,industry,Marketing,12297,11.038698731586459
+Cybersecurity Analyst,industry,Software,12635,11.342112586288925
+Data Science Intern,industry,AI,12343,11.16993357586288
+Data Science Intern,industry,Cybersecurity,12418,11.23780565057646
+Data Science Intern,industry,E-Commerce,12390,11.21246674268339
+Data Science Intern,industry,EdTech,12374,11.197987366744494
+Data Science Intern,industry,FinTech,12118,10.966317351722141
+Data Science Intern,industry,Gaming,12023,10.880346057084939
+Data Science Intern,industry,Healthcare,12269,11.102966462145481
+Data Science Intern,industry,Marketing,12286,11.11835079908056
+Data Science Intern,industry,Software,12281,11.113825994099654
+Frontend Developer,industry,AI,12377,11.19168829289906
+Frontend Developer,industry,Cybersecurity,12382,11.196209456465716
+Frontend Developer,industry,E-Commerce,12121,10.960204718286299
+Frontend Developer,industry,EdTech,12253,11.079563436446003
+Frontend Developer,industry,FinTech,12285,11.108498883272599
+Frontend Developer,industry,Gaming,12159,10.99456556139288
+Frontend Developer,industry,Healthcare,12398,11.210677179879013
+Frontend Developer,industry,Marketing,12289,11.112115814125923
+Frontend Developer,industry,Software,12327,11.146476657232505
+ML Engineer,industry,AI,12348,11.155882406085684
+ML Engineer,industry,Cybersecurity,12160,10.986032560576767
+ML Engineer,industry,E-Commerce,12369,11.17485499521168
+ML Engineer,industry,EdTech,12323,11.133295990459498
+ML Engineer,industry,FinTech,12435,11.23448313246481
+ML Engineer,industry,Gaming,12313,11.124261424209024
+ML Engineer,industry,Healthcare,12439,11.238096958965
+ML Engineer,industry,Marketing,12319,11.129682163959309
+ML Engineer,industry,Software,11980,10.82341036806823
+Marketing Intern,industry,AI,12347,11.065900678455238
+Marketing Intern,industry,Cybersecurity,12198,10.932360611954076
+Marketing Intern,industry,E-Commerce,12577,11.272036351577833
+Marketing Intern,industry,EdTech,12362,11.07934430931106
+Marketing Intern,industry,FinTech,12442,11.15104367387544
+Marketing Intern,industry,Gaming,12475,11.180619661758248
+Marketing Intern,industry,Healthcare,12570,11.26576265717845
+Marketing Intern,industry,Marketing,12575,11.270243867463725
+Marketing Intern,industry,Software,12031,10.78268818842593
+UI/UX Designer,industry,AI,12345,11.082284503653698
+UI/UX Designer,industry,Cybersecurity,12379,11.112806793902724
+UI/UX Designer,industry,E-Commerce,12382,11.11549993715999
+UI/UX Designer,industry,EdTech,12364,11.099341077616389
+UI/UX Designer,industry,FinTech,12446,11.172953659981687
+UI/UX Designer,industry,Gaming,12348,11.084977646910964
+UI/UX Designer,industry,Healthcare,12410,11.140635940894482
+UI/UX Designer,industry,Marketing,12325,11.064330215271918
+UI/UX Designer,industry,Software,12395,11.127170224608149
+AI Research Intern,employment_type,Contract,28036,25.157706768604015
+AI Research Intern,employment_type,Full-Time,27759,24.90914474923951
+AI Research Intern,employment_type,Internship,27794,24.940551502588814
+AI Research Intern,employment_type,Part-Time,27852,24.992596979567665
+Backend Developer,employment_type,Contract,27620,24.899033607384972
+Backend Developer,employment_type,Full-Time,27564,24.848550411077454
+Backend Developer,employment_type,Internship,27907,25.157759988460985
+Backend Developer,employment_type,Part-Time,27837,25.09465599307659
+Cloud Engineer,employment_type,Contract,27914,25.0390197520676
+Cloud Engineer,employment_type,Full-Time,27791,24.928688039324733
+Cloud Engineer,employment_type,Internship,27808,24.94393713783391
+Cloud Engineer,employment_type,Part-Time,27969,25.08835507077376
+Cybersecurity Analyst,employment_type,Contract,27666,24.835052379285273
+Cybersecurity Analyst,employment_type,Full-Time,27914,25.05767556261726
+Cybersecurity Analyst,employment_type,Internship,27894,25.039722080090485
+Cybersecurity Analyst,employment_type,Part-Time,27925,25.067549978006983
+Data Science Intern,employment_type,Contract,27525,24.909051419883802
+Data Science Intern,employment_type,Full-Time,27539,24.92172087383034
+Data Science Intern,employment_type,Internship,27819,25.175109952761037
+Data Science Intern,employment_type,Part-Time,27619,24.994117753524822
+Frontend Developer,employment_type,Contract,27645,24.99751336003834
+Frontend Developer,employment_type,Full-Time,27410,24.78501867240553
+Frontend Developer,employment_type,Internship,27856,25.188306462551203
+Frontend Developer,employment_type,Part-Time,27680,25.02916150500493
+ML Engineer,employment_type,Contract,27775,25.093507760692408
+ML Engineer,employment_type,Full-Time,27764,25.083569737816887
+ML Engineer,employment_type,Internship,27408,24.7619391793
+ML Engineer,employment_type,Part-Time,27739,25.0609833221907
+Marketing Intern,employment_type,Contract,27908,25.012323328284502
+Marketing Intern,employment_type,Full-Time,27937,25.038314347939092
+Marketing Intern,employment_type,Internship,27859,24.96840746748882
+Marketing Intern,employment_type,Part-Time,27873,24.980954856287585
+UI/UX Designer,employment_type,Contract,27580,24.758963678474604
+UI/UX Designer,employment_type,Full-Time,27955,25.09560658563298
+UI/UX Designer,employment_type,Internship,27653,24.8244968310681
+UI/UX Designer,employment_type,Part-Time,28206,25.320932904824318
+AI Research Intern,work_mode,Hybrid,28209,25.312945863730583
+AI Research Intern,work_mode,Onsite,22316,20.024945935517447
+AI Research Intern,work_mode,Remote,60916,54.662108200751966
+Backend Developer,work_mode,Hybrid,27760,25.02524159815376
+Backend Developer,work_mode,Onsite,22101,19.92373431414972
+Backend Developer,work_mode,Remote,61067,55.051024087696526
+Cloud Engineer,work_mode,Hybrid,27884,25.012109578227875
+Cloud Engineer,work_mode,Onsite,22070,19.796917888089556
+Cloud Engineer,work_mode,Remote,61528,55.19097253368257
+Cybersecurity Analyst,work_mode,Hybrid,27783,24.940080252066895
+Cybersecurity Analyst,work_mode,Onsite,22420,20.125853912512678
+Cybersecurity Analyst,work_mode,Remote,61196,54.93406583542043
+Data Science Intern,work_mode,Hybrid,27638,25.01131201245226
+Data Science Intern,work_mode,Onsite,21971,19.88289804709417
+Data Science Intern,work_mode,Remote,60893,55.10578994045357
+Frontend Developer,work_mode,Hybrid,27574,24.93331283739183
+Frontend Developer,work_mode,Onsite,22193,20.067636606957166
+Frontend Developer,work_mode,Remote,60824,54.999050555651
+ML Engineer,work_mode,Hybrid,27884,25.19198453282258
+ML Engineer,work_mode,Onsite,22263,20.113654843430968
+ML Engineer,work_mode,Remote,60539,54.694360623746455
+Marketing Intern,work_mode,Hybrid,27982,25.078645240506557
+Marketing Intern,work_mode,Onsite,22225,19.918979718042248
+Marketing Intern,work_mode,Remote,61370,55.002375041451195
+UI/UX Designer,work_mode,Hybrid,27812,24.967233423703252
+UI/UX Designer,work_mode,Onsite,22576,20.26680072535325
+UI/UX Designer,work_mode,Remote,61006,54.765965850943495
+AI Research Intern,location,Bangalore,12387,11.115298678224352
+AI Research Intern,location,Berlin,12326,11.06056119381556
+AI Research Intern,location,Dubai,12337,11.070431887725343
+AI Research Intern,location,London,12292,11.030051776276236
+AI Research Intern,location,New York,12297,11.034538455326137
+AI Research Intern,location,San Francisco,12473,11.192469557882646
+AI Research Intern,location,Singapore,12350,11.082097253255085
+AI Research Intern,location,Sydney,12517,11.231952333521773
+AI Research Intern,location,Toronto,12462,11.182598863972865
+Backend Developer,location,Bangalore,12514,11.281191403432857
+Backend Developer,location,Berlin,12269,11.06032741958748
+Backend Developer,location,Dubai,12320,11.106303187653253
+Backend Developer,location,London,12199,10.997223424203087
+Backend Developer,location,New York,12268,11.059425933939131
+Backend Developer,location,San Francisco,12422,11.198254723784798
+Backend Developer,location,Singapore,12311,11.098189816818117
+Backend Developer,location,Sydney,12378,11.158589355257464
+Backend Developer,location,Toronto,12247,11.040494735323813
+Cloud Engineer,location,Bangalore,12582,11.286126908379828
+Cloud Engineer,location,Berlin,12387,11.11121077842163
+Cloud Engineer,location,Dubai,12368,11.094167668323138
+Cloud Engineer,location,London,12197,10.940779677436716
+Cloud Engineer,location,New York,12305,11.03765630325972
+Cloud Engineer,location,San Francisco,12409,11.130944905904093
+Cloud Engineer,location,Singapore,12384,11.108519761037657
+Cloud Engineer,location,Sydney,12459,11.175795195636963
+Cloud Engineer,location,Toronto,12391,11.114798801600259
+Cybersecurity Analyst,location,Bangalore,12381,11.114103358198907
+Cybersecurity Analyst,location,Berlin,12226,10.974963868616415
+Cybersecurity Analyst,location,Dubai,12293,11.035108035081105
+Cybersecurity Analyst,location,London,12392,11.123977773588631
+Cybersecurity Analyst,location,New York,12382,11.115001032325246
+Cybersecurity Analyst,location,San Francisco,12483,11.20566611908545
+Cybersecurity Analyst,location,Singapore,12305,11.045880124597169
+Cybersecurity Analyst,location,Sydney,12638,11.344805608667942
+Cybersecurity Analyst,location,Toronto,12299,11.040494079839137
+Data Science Intern,location,Bangalore,12260,11.094821813179852
+Data Science Intern,location,Berlin,12214,11.053193607355523
+Data Science Intern,location,Dubai,12410,11.230565962607011
+Data Science Intern,location,London,12352,11.17807822482851
+Data Science Intern,location,New York,12193,11.03418942643572
+Data Science Intern,location,San Francisco,12189,11.030569582450996
+Data Science Intern,location,Singapore,12250,11.085772203218042
+Data Science Intern,location,Sydney,12187,11.028759660458634
+Data Science Intern,location,Toronto,12447,11.264049519465711
+Frontend Developer,location,Bangalore,12168,11.00270365581286
+Frontend Developer,location,Berlin,12331,11.150093588085829
+Frontend Developer,location,Dubai,12282,11.105786185132606
+Frontend Developer,location,London,12365,11.180837500339088
+Frontend Developer,location,New York,12202,11.033447568066117
+Frontend Developer,location,San Francisco,12280,11.103977719705943
+Frontend Developer,location,Singapore,12276,11.100360788852619
+Frontend Developer,location,Sydney,12353,11.169986707779113
+Frontend Developer,location,Toronto,12334,11.152806286225823
+ML Engineer,location,Bangalore,12307,11.118840684458739
+ML Engineer,location,Berlin,12387,11.191117214462533
+ML Engineer,location,Dubai,12159,10.985129103951719
+ML Engineer,location,London,12279,11.09354389895741
+ML Engineer,location,New York,12344,11.152268579585494
+ML Engineer,location,San Francisco,12446,11.244421155340332
+ML Engineer,location,Singapore,12043,10.880328135446216
+ML Engineer,location,Sydney,12306,11.117937227833691
+ML Engineer,location,Toronto,12415,11.216413999963862
+Marketing Intern,location,Bangalore,12358,11.07575934108284
+Marketing Intern,location,Berlin,12483,11.187789598214685
+Marketing Intern,location,Dubai,12471,11.177034693530029
+Marketing Intern,location,London,12378,11.093684182223935
+Marketing Intern,location,New York,12316,11.038117174686539
+Marketing Intern,location,San Francisco,12403,11.116090233650304
+Marketing Intern,location,Singapore,12516,11.217365586097493
+Marketing Intern,location,Sydney,12187,10.922501949326474
+Marketing Intern,location,Toronto,12465,11.1716572411877
+UI/UX Designer,location,Bangalore,12484,11.207066807907069
+UI/UX Designer,location,Berlin,12367,11.102034220873655
+UI/UX Designer,location,Dubai,12347,11.084079932491875
+UI/UX Designer,location,London,12300,11.041887354794692
+UI/UX Designer,location,New York,12252,10.99879706267842
+UI/UX Designer,location,San Francisco,12285,11.028421638508357
+UI/UX Designer,location,Singapore,12447,11.173851374400776
+UI/UX Designer,location,Sydney,12495,11.216941666517048
+UI/UX Designer,location,Toronto,12417,11.146919941828106

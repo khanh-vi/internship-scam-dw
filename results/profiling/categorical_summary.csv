@@ -1,0 +1,10 @@
+column_name,pandas_dtype,non_null_count,null_count,unique_count,most_frequent_value,most_frequent_count,most_frequent_percentage,most_frequent_percentage_of_non_null
+posting_date,str,1000000,0,3287,2020-10-10,366,0.0366,0.0366
+internship_title,str,1000000,0,9,Marketing Intern,111577,11.1577,11.1577
+employment_type,str,1000000,0,4,Part-Time,250700,25.07,25.07
+work_mode,str,1000000,0,3,Remote,549339,54.9339,54.9339
+industry,str,1000000,0,9,AI,111803,11.1803,11.1803
+location,str,1000000,0,9,Sydney,111520,11.152,11.152
+company_name,str,1000000,0,535938,Smith PLC,1248,0.1248,0.1248
+company_size,str,1000000,0,4,Small,300184,30.0184,30.0184
+recruiter_email_type,str,1000000,0,2,Corporate,749433,74.9433,74.9433

@@ -1,0 +1,5 @@
+composite,attributes,distinct_combinations,duplicate_rows,duplicate_pct,is_unique_key
+company_name + posting_date,2,990918,9082,0.9082,False
+company_name + posting_date + internship_title,3,998936,1064,0.1064,False
+company_name + posting_date + internship_title + location,4,999869,131,0.0131,False
+company_name + posting_date + internship_title + location + industry + employment_type + work_mode,7,999999,1,0.0001,False

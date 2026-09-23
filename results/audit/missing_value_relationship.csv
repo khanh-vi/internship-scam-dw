@@ -1,0 +1,4 @@
+column,missing_count,missing_pct,non_missing_count,missing_label_0,missing_label_1,missing_label_1_rate_pct,non_missing_label_0,non_missing_label_1,non_missing_label_1_rate_pct,label_1_rate_difference_pp
+company_age,10000,1.0,990000,7800,2200,22.0,770242,219758,22.197778,-0.197778
+stipend,10000,1.0,990000,7804,2196,21.96,770238,219762,22.198182,-0.238182
+trust_signal_score,10000,1.0,990000,7762,2238,22.38,770280,219720,22.193939,0.186061

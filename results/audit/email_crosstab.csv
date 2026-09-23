@@ -1,0 +1,5 @@
+recruiter_email_type,suspicious_email_domain,count,pct_of_all_rows,pct_within_email_type,pct_within_suspicious_flag
+Corporate,0,749433,74.9433,100.0,100.0
+Corporate,1,0,0.0,0.0,0.0
+Free,0,0,0.0,0.0,0.0
+Free,1,250567,25.0567,100.0,100.0

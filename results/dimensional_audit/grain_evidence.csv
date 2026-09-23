@@ -1,0 +1,9 @@
+check,value,note
+rows_in_staging,1000000,one physical line per row
+source_row_id_distinct,1000000,"lineage handle, not a business key"
+source_row_id_contiguous_1_to_n,1,
+exact_duplicate_rows_excluding_source_row_id,0,full 34-attribute comparison
+composite_duplicate_rows: company_name + posting_date,9082,not a key
+composite_duplicate_rows: company_name + posting_date + internship_title,1064,not a key
+composite_duplicate_rows: company_name + posting_date + internship_title + location,131,not a key
+composite_duplicate_rows: company_name + posting_date + internship_title + location + industry + employment_type + work_mode,1,not a key

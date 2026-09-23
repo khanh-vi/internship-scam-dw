@@ -1,0 +1,37 @@
+column,dtype,distinct_values,null_count,uniqueness_ratio,max_value_frequency,is_unique_key
+company_name,str,535938,0,0.535938,1248.0,False
+stipend,float64,73830,10000,0.07383,13752.0,False
+registration_fee,int64,4951,0,0.004951,900095.0,False
+job_description_length,int64,3946,0,0.003946,2325.0,False
+posting_date,str,3287,0,0.003287,366.0,False
+fraud_score,float64,1001,0,0.001001,51586.0,False
+trust_signal_score,float64,1001,10000,0.001001,2495.0,False
+recruiter_response_time_hours,float64,595,0,0.000595,44700.0,False
+domain_age_months,int64,500,0,0.0005,8630.0,False
+recruiter_experience_years,float64,183,0,0.000183,49615.0,False
+vague_description_score,int64,101,0,0.000101,73938.0,False
+keyword_spam_score,int64,101,0,0.000101,114428.0,False
+urgency_score,int64,101,0,0.000101,59153.0,False
+emotional_manipulation_score,int64,101,0,0.000101,114946.0,False
+phishing_language_score,int64,100,0,0.0001,145727.0,False
+company_age,float64,39,10000,3.9e-05,25849.0,False
+grammatical_errors,int64,15,0,1.5e-05,224004.0,False
+industry,str,9,0,9e-06,111803.0,False
+internship_title,str,9,0,9e-06,111577.0,False
+location,str,9,0,9e-06,111520.0,False
+employment_type,str,4,0,4e-06,250700.0,False
+company_size,str,4,0,4e-06,300184.0,False
+work_mode,str,3,0,3e-06,549339.0,False
+linkedin_presence,int64,2,0,2e-06,800764.0,False
+verification_status,int64,2,0,2e-06,699713.0,False
+recruiter_email_type,str,2,0,2e-06,749433.0,False
+payment_required,int64,2,0,2e-06,900095.0,False
+website_available,int64,2,0,2e-06,849597.0,False
+fake_certificate_offer,int64,2,0,2e-06,920170.0,False
+social_media_presence,int64,2,0,2e-06,749800.0,False
+suspicious_email_domain,int64,2,0,2e-06,749433.0,False
+is_fake_posting,int64,2,0,2e-06,778042.0,False
+unrealistic_salary_flag,int64,1,0,1e-06,1000000.0,False
+company_name + posting_date,composite,990918,0,0.990918,,False
+company_name + posting_date + internship_title,composite,998936,0,0.998936,,False
+company_name + posting_date + internship_title + location,composite,999869,0,0.999869,,False

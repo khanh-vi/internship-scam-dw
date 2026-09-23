@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Large source/generated datasets
+data/raw/*
+data/staging/*
+data/cleaned/*
+
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+!data/cleaned/.gitkeep
+
+# Archives
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db

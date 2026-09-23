@@ -1,0 +1,8 @@
+column,expected_min,expected_max,observed_min,observed_max,count_below_0,count_above_100,count_outside_range,pct_outside_range,null_count,distinct_values,within_expected_range
+vague_description_score,0.0,100.0,0.0,100.0,0,0,0,0.0,0,101,True
+urgency_score,0.0,100.0,0.0,100.0,0,0,0,0.0,0,101,True
+keyword_spam_score,0.0,100.0,0.0,100.0,0,0,0,0.0,0,101,True
+emotional_manipulation_score,0.0,100.0,0.0,100.0,0,0,0,0.0,0,101,True
+phishing_language_score,0.0,100.0,0.0,100.0,0,0,0,0.0,0,100,True
+trust_signal_score,0.0,100.0,0.0,100.0,0,0,0,0.0,10000,1001,True
+fraud_score,0.0,100.0,0.0,100.0,0,0,0,0.0,0,1001,True

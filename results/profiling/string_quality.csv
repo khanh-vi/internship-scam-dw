@@ -1,0 +1,10 @@
+column_name,pandas_dtype,non_null_count,null_count,leading_trailing_whitespace_count,leading_trailing_whitespace_distinct,empty_string_count,whitespace_only_count,unique_count,unique_count_case_insensitive,case_only_duplicate_values,unique_count_trimmed_case_insensitive,case_or_whitespace_duplicate_values,min_length,max_length,mean_length_weighted
+posting_date,str,1000000,0,0,0,0,0,3287,3287,0,3287,0,10,10,10.0
+internship_title,str,1000000,0,0,0,0,0,9,9,0,9,0,11,21,16.4443
+employment_type,str,1000000,0,0,0,0,0,4,4,0,4,0,8,10,9.0003
+work_mode,str,1000000,0,0,0,0,0,3,3,0,3,0,6,6,6.0
+industry,str,1000000,0,0,0,0,0,9,9,0,9,0,2,13,7.8835
+location,str,1000000,0,0,0,0,0,9,9,0,9,0,5,13,7.6683
+company_name,str,1000000,0,0,0,0,0,535938,535938,0,535938,0,5,38,16.534
+company_size,str,1000000,0,0,0,0,0,4,4,0,4,0,5,10,6.6011
+recruiter_email_type,str,1000000,0,0,0,0,0,2,2,0,2,0,4,9,7.7472

@@ -1,0 +1,10 @@
+column,dtype,n_distinct_incl_null,distinct_values,count_0,count_1,count_other_or_null,null_count,pct_1,strictly_binary_0_1,is_constant
+linkedin_presence,int64,2,"0, 1",199236,800764,0,0,80.0764,True,False
+website_available,int64,2,"0, 1",150403,849597,0,0,84.9597,True,False
+verification_status,int64,2,"0, 1",300287,699713,0,0,69.9713,True,False
+unrealistic_salary_flag,int64,1,0,1000000,0,0,0,0.0,True,True
+payment_required,int64,2,"0, 1",900095,99905,0,0,9.9905,True,False
+fake_certificate_offer,int64,2,"0, 1",920170,79830,0,0,7.983,True,False
+suspicious_email_domain,int64,2,"0, 1",749433,250567,0,0,25.0567,True,False
+social_media_presence,int64,2,"0, 1",250200,749800,0,0,74.98,True,False
+is_fake_posting,int64,2,"0, 1",778042,221958,0,0,22.1958,True,False

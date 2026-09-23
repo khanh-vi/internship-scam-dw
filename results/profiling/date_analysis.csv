@@ -1,0 +1,4 @@
+column,pandas_dtype,detected_by,non_null_count,null_count,parsed_count,parse_success_percentage,min_date,max_date,invalid_count,distinct_parsed_values,notes
+posting_date,str,name,1000000,0,1000000,100.0,2018-01-01 00:00:00,2026-12-31 00:00:00,0,3287,parsed from text on distinct values only; dataframe untouched
+recruiter_experience_years,float64,name,1000000,0,0,0.0,,,0,0,"numeric dtype matched only by column name; values are not date-like (not whole numbers in a plausible year range), so no parse was attempted - likely a duration/measure, needs manual review"
+recruiter_response_time_hours,float64,name,1000000,0,0,0.0,,,0,0,"numeric dtype matched only by column name; values are not date-like (not whole numbers in a plausible year range), so no parse was attempted - likely a duration/measure, needs manual review"

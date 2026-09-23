@@ -1,0 +1,68 @@
+category,observation,value,note
+row_count,row count,1000000,"exactly 1,000,000"
+date_coverage,distinct dates observed,3287,
+date_coverage,calendar days in span,3287,
+date_coverage,share of calendar days with at least one row,100.0,100% means no gap day in the range
+date_coverage,rows per date - min,247,
+date_coverage,rows per date - max,366,
+date_coverage,rows per date - mean,304.2288,
+date_coverage,rows per date - std,16.9621,
+date_coverage,rows per date - coefficient of variation,0.055754,a low value means dates are close to evenly loaded
+date_coverage,min weekday share,14.2196,uniform across 7 weekdays would be 14.2857%
+date_coverage,max weekday share,14.3617,
+categorical_balance,internship_title: distinct values,9,
+categorical_balance,internship_title: max deviation from uniform share (pp),0.0609,uniform share would be 11.1111%
+categorical_balance,employment_type: distinct values,4,
+categorical_balance,employment_type: max deviation from uniform share (pp),0.07,uniform share would be 25.0000%
+categorical_balance,work_mode: distinct values,3,
+categorical_balance,work_mode: max deviation from uniform share (pp),21.6006,uniform share would be 33.3333%
+categorical_balance,industry: distinct values,9,
+categorical_balance,industry: max deviation from uniform share (pp),0.0692,uniform share would be 11.1111%
+categorical_balance,location: distinct values,9,
+categorical_balance,location: max deviation from uniform share (pp),0.0552,uniform share would be 11.1111%
+categorical_balance,company_size: distinct values,4,
+categorical_balance,company_size: max deviation from uniform share (pp),9.964,uniform share would be 25.0000%
+categorical_balance,recruiter_email_type: distinct values,2,
+categorical_balance,recruiter_email_type: max deviation from uniform share (pp),24.9433,uniform share would be 50.0000%
+missingness,columns with missing values,3,
+missingness,missing counts,"10000, 10000, 10000","identical counts across columns would be a pattern, not a coincidence"
+missingness,all missing counts identical,True,
+missingness,missing percentages,"1.0000%, 1.0000%, 1.0000%",
+missingness,rows missing in all three columns,0,independence would predict about 1.00
+duplicates,exact duplicate rows (all 33 columns),0,counted with duplicated(keep='first'); no row was removed
+string_quality,posting_date: rows with leading/trailing whitespace,0,
+string_quality,posting_date: rows that are empty after stripping,0,
+string_quality,posting_date: rows containing non-ASCII characters,0,
+string_quality,posting_date: rows containing a double space,0,
+string_quality,internship_title: rows with leading/trailing whitespace,0,
+string_quality,internship_title: rows that are empty after stripping,0,
+string_quality,internship_title: rows containing non-ASCII characters,0,
+string_quality,internship_title: rows containing a double space,0,
+string_quality,employment_type: rows with leading/trailing whitespace,0,
+string_quality,employment_type: rows that are empty after stripping,0,
+string_quality,employment_type: rows containing non-ASCII characters,0,
+string_quality,employment_type: rows containing a double space,0,
+string_quality,work_mode: rows with leading/trailing whitespace,0,
+string_quality,work_mode: rows that are empty after stripping,0,
+string_quality,work_mode: rows containing non-ASCII characters,0,
+string_quality,work_mode: rows containing a double space,0,
+string_quality,industry: rows with leading/trailing whitespace,0,
+string_quality,industry: rows that are empty after stripping,0,
+string_quality,industry: rows containing non-ASCII characters,0,
+string_quality,industry: rows containing a double space,0,
+string_quality,location: rows with leading/trailing whitespace,0,
+string_quality,location: rows that are empty after stripping,0,
+string_quality,location: rows containing non-ASCII characters,0,
+string_quality,location: rows containing a double space,0,
+string_quality,company_name: rows with leading/trailing whitespace,0,
+string_quality,company_name: rows that are empty after stripping,0,
+string_quality,company_name: rows containing non-ASCII characters,0,
+string_quality,company_name: rows containing a double space,0,
+string_quality,company_size: rows with leading/trailing whitespace,0,
+string_quality,company_size: rows that are empty after stripping,0,
+string_quality,company_size: rows containing non-ASCII characters,0,
+string_quality,company_size: rows containing a double space,0,
+string_quality,recruiter_email_type: rows with leading/trailing whitespace,0,
+string_quality,recruiter_email_type: rows that are empty after stripping,0,
+string_quality,recruiter_email_type: rows containing non-ASCII characters,0,
+string_quality,recruiter_email_type: rows containing a double space,0,

@@ -1,0 +1,2 @@
+check,rows_examined,rows_agreeing,rows_disagreeing,flag_0_with_positive_fee,flag_1_with_zero_fee,invariant_holds
+payment_required == (registration_fee > 0),1000000,1000000,0,0,0,True

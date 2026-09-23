@@ -1,0 +1,21 @@
+company_name,posting_count,total_distinct_across_attributes,distinct_company_size,distinct_company_age,distinct_linkedin_presence,distinct_website_available,distinct_domain_age_months,distinct_verification_status,distinct_social_media_presence,distinct_location,distinct_industry
+Smith LLC,1198,520,4,39,2,2,451,2,2,9,9
+Smith and Sons,1244,518,4,39,2,2,449,2,2,9,9
+Smith Inc,1203,518,4,39,2,2,449,2,2,9,9
+Smith PLC,1248,512,4,39,2,2,443,2,2,9,9
+Smith Group,1186,509,4,39,2,2,440,2,2,9,9
+Smith Ltd,1205,508,4,39,2,2,439,2,2,9,9
+Johnson Group,914,487,4,39,2,2,418,2,2,9,9
+Johnson LLC,984,485,4,39,2,2,416,2,2,9,9
+Johnson and Sons,928,483,4,39,2,2,414,2,2,9,9
+Johnson Ltd,943,482,4,39,2,2,413,2,2,9,9
+Johnson Inc,916,478,4,39,2,2,409,2,2,9,9
+Johnson PLC,940,477,4,39,2,2,408,2,2,9,9
+Williams PLC,808,461,4,39,2,2,392,2,2,9,9
+Williams Group,793,457,4,39,2,2,388,2,2,9,9
+Williams Ltd,785,456,4,39,2,2,387,2,2,9,9
+Jones Inc,745,452,4,39,2,2,383,2,2,9,9
+Williams LLC,773,448,4,39,2,2,379,2,2,9,9
+Williams and Sons,738,448,4,39,2,2,379,2,2,9,9
+Williams Inc,741,443,4,39,2,2,374,2,2,9,9
+Brown and Sons,730,442,4,39,2,2,373,2,2,9,9

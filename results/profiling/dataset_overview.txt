@@ -1,0 +1,109 @@
+==============================================================================
+DATASET OVERVIEW
+==============================================================================
+Generated            : 2026-09-23 16:35:25
+Source file          : E:\project\internship-scam-dw\data\raw\fake_internship_detection_dataset.csv
+Source size on disk  : 165.74 MB (173,788,906 bytes)
+Source sha256        : 3463d99be6580df352928d982eac995ac466c10f037c4f9252a5ceeb8f3b1398
+Load time            : 2.91 s
+
+------------------------------------------------------------------------------
+SHAPE
+------------------------------------------------------------------------------
+Number of rows       : 1,000,000
+Number of columns    : 33
+Total cells          : 33,000,000
+
+------------------------------------------------------------------------------
+MEMORY USAGE (in-memory pandas representation, deep=True)
+------------------------------------------------------------------------------
+Total                : 687.48 MB (720,878,872 bytes)
+Average per row      : 720.88 B
+
+column                            dtype                 memory     share
+<Index>                           -                   132.00 B     0.00%
+posting_date                      str                 56.27 MB     8.18%
+internship_title                  str                 62.41 MB     9.08%
+employment_type                   str                 55.31 MB     8.05%
+work_mode                         str                 52.45 MB     7.63%
+industry                          str                 54.25 MB     7.89%
+location                          str                 54.04 MB     7.86%
+company_name                      str                 62.50 MB     9.09%
+company_size                      str                 53.03 MB     7.71%
+company_age                       float64              7.63 MB     1.11%
+linkedin_presence                 int64                7.63 MB     1.11%
+website_available                 int64                7.63 MB     1.11%
+domain_age_months                 int64                7.63 MB     1.11%
+verification_status               int64                7.63 MB     1.11%
+stipend                           float64              7.63 MB     1.11%
+unrealistic_salary_flag           int64                7.63 MB     1.11%
+payment_required                  int64                7.63 MB     1.11%
+registration_fee                  int64                7.63 MB     1.11%
+job_description_length            int64                7.63 MB     1.11%
+grammatical_errors                int64                7.63 MB     1.11%
+vague_description_score           int64                7.63 MB     1.11%
+urgency_score                     int64                7.63 MB     1.11%
+keyword_spam_score                int64                7.63 MB     1.11%
+fake_certificate_offer            int64                7.63 MB     1.11%
+recruiter_experience_years        float64              7.63 MB     1.11%
+recruiter_email_type              str                 54.12 MB     7.87%
+suspicious_email_domain           int64                7.63 MB     1.11%
+recruiter_response_time_hours     float64              7.63 MB     1.11%
+social_media_presence             int64                7.63 MB     1.11%
+emotional_manipulation_score      int64                7.63 MB     1.11%
+phishing_language_score           int64                7.63 MB     1.11%
+trust_signal_score                float64              7.63 MB     1.11%
+fraud_score                       float64              7.63 MB     1.11%
+is_fake_posting                   int64                7.63 MB     1.11%
+
+------------------------------------------------------------------------------
+COLUMN NAMES (in file order)
+------------------------------------------------------------------------------
+  1. posting_date  [str]
+  2. internship_title  [str]
+  3. employment_type  [str]
+  4. work_mode  [str]
+  5. industry  [str]
+  6. location  [str]
+  7. company_name  [str]
+  8. company_size  [str]
+  9. company_age  [float64]
+ 10. linkedin_presence  [int64]
+ 11. website_available  [int64]
+ 12. domain_age_months  [int64]
+ 13. verification_status  [int64]
+ 14. stipend  [float64]
+ 15. unrealistic_salary_flag  [int64]
+ 16. payment_required  [int64]
+ 17. registration_fee  [int64]
+ 18. job_description_length  [int64]
+ 19. grammatical_errors  [int64]
+ 20. vague_description_score  [int64]
+ 21. urgency_score  [int64]
+ 22. keyword_spam_score  [int64]
+ 23. fake_certificate_offer  [int64]
+ 24. recruiter_experience_years  [float64]
+ 25. recruiter_email_type  [str]
+ 26. suspicious_email_domain  [int64]
+ 27. recruiter_response_time_hours  [float64]
+ 28. social_media_presence  [int64]
+ 29. emotional_manipulation_score  [int64]
+ 30. phishing_language_score  [int64]
+ 31. trust_signal_score  [float64]
+ 32. fraud_score  [float64]
+ 33. is_fake_posting  [int64]
+
+------------------------------------------------------------------------------
+EXACT DUPLICATE ROWS (all columns identical)
+------------------------------------------------------------------------------
+Duplicate rows (excess copies)   : 0
+Duplicate rows as % of dataset   : 0.0000%
+Distinct rows                    : 1,000,000
+
+Note: counted with pandas .duplicated(keep='first'), i.e. the first
+occurrence of each repeated row is NOT counted. No rows were removed.
+
+==============================================================================
+This file is descriptive only. No column was dropped, cleaned,
+re-typed or otherwise modified, and data/raw/ was never written to.
+==============================================================================

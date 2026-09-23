@@ -1,0 +1,8 @@
+company_age,stipend,trust_signal_score,row_count,n_missing_columns,pct_of_rows,expected_rows_if_independent
+False,False,False,970272,0,97.0272,970299.0
+False,False,True,9816,1,0.9816,9801.0
+False,True,False,9824,1,0.9824,9801.0
+True,False,False,9816,1,0.9816,9801.0
+False,True,True,88,2,0.0088,99.0
+True,False,True,96,2,0.0096,99.0
+True,True,False,88,2,0.0088,99.0

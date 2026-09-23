@@ -1,0 +1,6 @@
+bundle,attributes,attribute_count,possible_combinations,observed_combinations,pct_of_possible_observed,largest_combination_rows,largest_combination_pct,smallest_combination_rows
+trust_presence_flags,linkedin_presence + website_available + verification_status + social_media_presence,4,16,16,100.0,357337,35.7337,2254
+fraud_flags,payment_required + fake_certificate_offer + suspicious_email_domain + unrealistic_salary_flag,4,8,8,100.0,620594,62.0594,1989
+employment_arrangement,employment_type + work_mode,2,12,12,100.0,137624,13.7624,49832
+company_presence_5,company_size + linkedin_presence + website_available + verification_status + social_media_presence,5,64,64,100.0,107190,10.719,369
+recruiter_email_pair,recruiter_email_type + suspicious_email_domain,2,4,2,50.0,749433,74.9433,250567

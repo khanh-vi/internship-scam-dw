@@ -1,0 +1,100 @@
+erDiagram
+    DimDate ||--o{ FactInternshipPosting : DateKey
+    DimCompanyName ||--o{ FactInternshipPosting : CompanyNameKey
+    DimCompanyProfile ||--o{ FactInternshipPosting : CompanyProfileKey
+    DimInternshipTitle ||--o{ FactInternshipPosting : InternshipTitleKey
+    DimIndustry ||--o{ FactInternshipPosting : IndustryKey
+    DimLocation ||--o{ FactInternshipPosting : LocationKey
+    DimEmploymentType ||--o{ FactInternshipPosting : EmploymentTypeKey
+    DimWorkMode ||--o{ FactInternshipPosting : WorkModeKey
+    DimRecruiterEmail ||--o{ FactInternshipPosting : RecruiterEmailKey
+
+    FactInternshipPosting {
+        bigint FactPostingKey PK
+        int DateKey FK
+        int CompanyNameKey FK
+        int CompanyProfileKey FK
+        int InternshipTitleKey FK
+        int IndustryKey FK
+        int LocationKey FK
+        int EmploymentTypeKey FK
+        int WorkModeKey FK
+        int RecruiterEmailKey FK
+        int SourceRowID "lineage only"
+        tinyint IsFuturePosting "data quality"
+        tinyint FakePostingCount "outcome 0-1 additive"
+        tinyint PaymentRequired "additive"
+        tinyint FakeCertificateOffer "additive"
+        smallint CompanyAge "nullable semi-additive"
+        smallint DomainAgeMonths "semi-additive"
+        int Stipend "nullable UNRESOLVED"
+        int RegistrationFee "currency unresolved"
+        smallint JobDescriptionLength "additive"
+        tinyint GrammaticalErrors "additive"
+        tinyint VagueDescriptionScore "non-additive"
+        tinyint UrgencyScore "non-additive"
+        tinyint KeywordSpamScore "non-additive"
+        tinyint EmotionalManipulationScore "non-additive"
+        tinyint PhishingLanguageScore "non-additive"
+        decimal TrustSignalScore "nullable non-additive"
+        decimal FraudScore "non-additive"
+        decimal RecruiterExperienceYears "non-additive"
+        decimal RecruiterResponseTimeHours "non-additive"
+    }
+
+    DimDate {
+        int DateKey PK "YYYYMMDD"
+        date FullDate
+        tinyint Day
+        tinyint DayOfWeek
+        varchar DayName
+        tinyint Month
+        varchar MonthName
+        tinyint Quarter
+        smallint Year
+    }
+
+    DimCompanyName {
+        int CompanyNameKey PK
+        varchar CompanyName "name observed on a posting"
+    }
+
+    DimCompanyProfile {
+        int CompanyProfileKey PK
+        varchar CompanySize "nominal not ordinal"
+        tinyint LinkedInPresence
+        tinyint WebsiteAvailable
+        tinyint VerificationStatus
+        tinyint SocialMediaPresence
+    }
+
+    DimInternshipTitle {
+        int InternshipTitleKey PK
+        varchar InternshipTitle
+    }
+
+    DimIndustry {
+        int IndustryKey PK
+        varchar Industry
+    }
+
+    DimLocation {
+        int LocationKey PK
+        varchar Location "no hierarchy in source"
+    }
+
+    DimEmploymentType {
+        int EmploymentTypeKey PK
+        varchar EmploymentType
+    }
+
+    DimWorkMode {
+        int WorkModeKey PK
+        varchar WorkMode
+    }
+
+    DimRecruiterEmail {
+        int RecruiterEmailKey PK
+        varchar RecruiterEmailType
+        tinyint SuspiciousEmailDomain
+    }

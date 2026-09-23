@@ -1,0 +1,10 @@
+column_a,column_b,missing_a,missing_b,missing_both,missing_either,jaccard,expected_both_if_independent,observed_minus_expected,masks_identical
+company_age,company_age,10000,10000,10000,10000,1.0,100.0,9900.0,True
+company_age,stipend,10000,10000,88,19912,0.004419,100.0,-12.0,False
+company_age,trust_signal_score,10000,10000,96,19904,0.004823,100.0,-4.0,False
+stipend,company_age,10000,10000,88,19912,0.004419,100.0,-12.0,False
+stipend,stipend,10000,10000,10000,10000,1.0,100.0,9900.0,True
+stipend,trust_signal_score,10000,10000,88,19912,0.004419,100.0,-12.0,False
+trust_signal_score,company_age,10000,10000,96,19904,0.004823,100.0,-4.0,False
+trust_signal_score,stipend,10000,10000,88,19912,0.004419,100.0,-12.0,False
+trust_signal_score,trust_signal_score,10000,10000,10000,10000,1.0,100.0,9900.0,True

@@ -1,0 +1,9 @@
+check,row_count,pct_of_rows,section,payment_required,rows,zeros,positives,negatives,nulls,count,mean,std,min,p01,p05,p25,median,p75,p95,p99,max
+payment_required = 0 AND registration_fee > 0,0.0,0.0,consistency_check,,,,,,,,,,,,,,,,,,
+payment_required = 1 AND registration_fee = 0,0.0,0.0,consistency_check,,,,,,,,,,,,,,,,,,
+payment_required = 0 AND registration_fee = 0 (consistent),900095.0,90.0095,consistency_check,,,,,,,,,,,,,,,,,,
+payment_required = 1 AND registration_fee > 0 (consistent),99905.0,9.9905,consistency_check,,,,,,,,,,,,,,,,,,
+registration_fee < 0,0.0,0.0,consistency_check,,,,,,,,,,,,,,,,,,
+registration_fee is null,0.0,0.0,consistency_check,,,,,,,,,,,,,,,,,,
+,,,registration_fee_by_payment_required,0.0,900095.0,900095.0,0.0,0.0,0.0,900095.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+,,,registration_fee_by_payment_required,1.0,99905.0,0.0,99905.0,0.0,0.0,99905.0,2523.22775636855,1430.6065529912125,50.0,98.0,294.0,1284.0,2520.0,3763.0,4753.0,4948.0,4999.0

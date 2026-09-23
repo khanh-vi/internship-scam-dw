@@ -1,0 +1,16 @@
+metric,value
+rows_total,1000000
+rows_null_raw,0
+rows_unparsed_strict_format,0
+rows_unparsed_any_format,0
+min_date,2018-01-01
+max_date,2026-12-31
+span_days,3286
+distinct_dates,3287
+early_cutoff,2018-01-01
+rows_before_early_cutoff,0
+rows_before_early_cutoff_pct,0.0
+future_cutoff,2026-09-23
+rows_after_future_cutoff,30246
+rows_after_future_cutoff_pct,3.0246
+distinct_future_dates,99
