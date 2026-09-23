@@ -179,7 +179,7 @@ The machine-readable diagram source is `docs/schema/star_schema.mmd`.
 
 | Dimension | Surrogate key | Source attribute(s) | Rows in v1 | SCD |
 | --- | --- | --- | ---: | --- |
-| `DimDate` | `DateKey` | `posting_date` | 3,287 | Type 0 |
+| `DimDate` | `DateKey` | `posting_date` | 3,288 (including Unknown) | Type 0 |
 | `DimCompanyName` | `CompanyNameKey` | `company_name` | 535,938 | Type 1 |
 | `DimCompanyProfile` | `CompanyProfileKey` | `company_size` + 4 presence/status flags | 64 | Mini-dimension, no history |
 | `DimInternshipTitle` | `InternshipTitleKey` | `internship_title` | 9 | Type 1 |
@@ -211,13 +211,13 @@ Full detail, including evidence and caveats per dimension, is in `docs/schema/di
 
 **Why `YYYYMMDD`.** The evidence supports it and nothing suggests a better design. The integer form sorts chronologically, is human-readable in a query result, and is compact. It is adopted.
 
-**Range and generation.** `DimDate` is generated from the calendar, not harvested from the data, covering **2018-01-01 to 2026-12-31** inclusive: **3,287** rows. A direct measurement against staging on 2026-09-23 confirmed that the observed dates number **3,287** and that **every calendar day in that range is present in the data**, so the generated calendar and the observed set coincide exactly.
+**Range and generation.** `DimDate` is generated from the calendar, not harvested from the data. Its normal analytical calendar covers **2018-01-01 to 2026-12-31** inclusive: **3,287** regular rows. A direct measurement against staging on 2026-09-23 confirmed that the observed dates number **3,287** and that **every calendar day in that range is present in the data**, so the generated calendar and the observed set coincide exactly. Including the Unknown member, `DimDate` contains **3,288** rows in total.
 
 **Future dates are mandatory here.** 30,246 rows (3.0246%) fall after the 2026-09-23 reference date, across 99 distinct future dates ending at 2026-12-31. If the calendar stopped at the reference date those rows would lose their join. The calendar therefore runs to the end of 2026 (§16).
 
 **SCD.** Type 0 / static. The calendar attributes of a given date do not change.
 
-**Unknown member.** `DateKey = 0` with `FullDate` NULL is reserved for referential integrity in future loads. `posting_date` is non-null on all 1,000,000 rows, so **0 fact rows reference it in v1** — that is a load-time assertion, not an expectation.
+**Unknown member.** `DateKey = 0` with `FullDate = 1900-01-01` is reserved for referential integrity in future loads. `1900-01-01` is a technical sentinel for the Unknown member; it is not part of the normal analytical calendar, whose regular range is 2018-01-01 through 2026-12-31. `posting_date` is non-null on all 1,000,000 rows, so **0 fact rows reference the Unknown member in v1** — that is a load-time assertion, not an expectation.
 
 ### 5.2 DimCompanyName
 
@@ -412,7 +412,7 @@ The design therefore splits the company information along the line the evidence 
 
 | Dimension | PK (surrogate) | Natural / source attribute(s) | Unknown member |
 | --- | --- | --- | --- |
-| `DimDate` | `DateKey` | `posting_date` | `0`, `FullDate` NULL |
+| `DimDate` | `DateKey` | `posting_date` | `DateKey = 0`, `FullDate = 1900-01-01` (technical sentinel) |
 | `DimCompanyName` | `CompanyNameKey` | `company_name` | `0`, `CompanyName = 'Unknown'` |
 | `DimCompanyProfile` | `CompanyProfileKey` | `company_size` + 4 flags (combination) | `0` |
 | `DimInternshipTitle` | `InternshipTitleKey` | `internship_title` | `0`, `InternshipTitle = 'Unknown'` |
@@ -770,7 +770,7 @@ The checks below were executed programmatically against the generated artifacts.
 5. **`DimCompanyProfile`** is created as a 64-row mini-dimension. All 64 of 64 possible combinations occur. `CompanySize` is nominal; no ordinal ordering is imposed.
 6. **`company_age` and `domain_age_months`** are fact measures at posting grain, not dimension attributes.
 7. **Nine dimensions**, each with an integer surrogate key, each joined directly to the fact. Pure star, no snowflaking.
-8. **`DimDate`** uses the `YYYYMMDD` integer convention and covers 2018-01-01 to 2026-12-31 (3,287 rows), including the 99 distinct future dates.
+8. **`DimDate`** uses the `YYYYMMDD` integer convention. Its normal analytical calendar covers 2018-01-01 to 2026-12-31 (3,287 regular rows), including the 99 distinct future dates; with the key-0 Unknown sentinel row, it contains 3,288 rows in total.
 9. **`DimIndustry` stays separate from `DimInternshipTitle`** (81/81 cells populated, Cramér's V 0.001236).
 10. **`DimWorkMode` stays separate from `DimEmploymentType`** (12/12 combinations, Cramér's V 0.000000).
 11. **`DimRecruiterEmail`** holds both `RecruiterEmailType` and `SuspiciousEmailDomain` in one two-row dimension, preserving the exact bijection without creating two join paths.

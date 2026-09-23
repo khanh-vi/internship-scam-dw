@@ -179,7 +179,7 @@ Mã nguồn sơ đồ ở dạng máy đọc được nằm tại `docs/schema/s
 
 | Dimension | Surrogate key | Thuộc tính nguồn | Số dòng trong v1 | SCD |
 | --- | --- | --- | ---: | --- |
-| `DimDate` | `DateKey` | `posting_date` | 3,287 | Type 0 |
+| `DimDate` | `DateKey` | `posting_date` | 3,288 (bao gồm Unknown) | Type 0 |
 | `DimCompanyName` | `CompanyNameKey` | `company_name` | 535,938 | Type 1 |
 | `DimCompanyProfile` | `CompanyProfileKey` | `company_size` + 4 cờ hiện diện/xác minh | 64 | Mini-dimension, không lưu lịch sử |
 | `DimInternshipTitle` | `InternshipTitleKey` | `internship_title` | 9 | Type 1 |
@@ -211,13 +211,13 @@ Chi tiết đầy đủ, bao gồm bằng chứng và cảnh báo cho từng Dim
 
 **Vì sao chọn `YYYYMMDD`.** Bằng chứng ủng hộ nó và không có gì gợi ý một thiết kế tốt hơn. Dạng số nguyên sắp xếp đúng theo thời gian, dễ đọc trong kết quả truy vấn, và gọn. Nó được chọn.
 
-**Phạm vi và cách sinh.** `DimDate` được sinh từ lịch, không thu hoạch từ dữ liệu, bao phủ **2018-01-01 đến 2026-12-31** bao gồm cả hai đầu: **3,287** dòng. Phép đo trực tiếp trên staging ngày 2026-09-23 xác nhận rằng số ngày quan sát được là **3,287** và **mọi ngày lịch trong khoảng đó đều có mặt trong dữ liệu**, nên lịch được sinh ra và tập quan sát trùng khớp chính xác.
+**Phạm vi và cách sinh.** `DimDate` được sinh từ lịch, không thu hoạch từ dữ liệu. Lịch phân tích thông thường bao phủ **2018-01-01 đến 2026-12-31** bao gồm cả hai đầu: **3,287** dòng thông thường. Phép đo trực tiếp trên staging ngày 2026-09-23 xác nhận rằng số ngày quan sát được là **3,287** và **mọi ngày lịch trong khoảng đó đều có mặt trong dữ liệu**, nên lịch được sinh ra và tập quan sát trùng khớp chính xác. Khi tính cả Unknown member, `DimDate` có tổng cộng **3,288** dòng.
 
 **Ngày tương lai là bắt buộc ở đây.** 30,246 dòng (3.0246%) rơi sau ngày tham chiếu 2026-09-23, trải trên 99 ngày tương lai phân biệt kết thúc ở 2026-12-31. Nếu lịch dừng ở ngày tham chiếu thì những dòng đó sẽ mất join. Vì vậy lịch chạy tới hết năm 2026 (§16).
 
 **SCD.** Type 0 / tĩnh. Các thuộc tính lịch của một ngày cho trước không thay đổi.
 
-**Unknown member.** `DateKey = 0` với `FullDate` NULL được dành riêng cho referential integrity trong các lần nạp tương lai. `posting_date` không null trên toàn bộ 1,000,000 dòng, nên **0 dòng Fact tham chiếu đến nó trong v1** — đó là một assertion lúc nạp, không phải một kỳ vọng.
+**Unknown member.** `DateKey = 0` với `FullDate = 1900-01-01` được dành riêng cho referential integrity trong các lần nạp tương lai. `1900-01-01` là sentinel kỹ thuật cho Unknown member; ngày này không thuộc lịch phân tích thông thường, có phạm vi từ 2018-01-01 đến 2026-12-31. `posting_date` không null trên toàn bộ 1,000,000 dòng, nên **0 dòng Fact tham chiếu đến Unknown member trong v1** — đó là một assertion lúc nạp, không phải một kỳ vọng.
 
 ### 5.2 DimCompanyName
 
@@ -412,7 +412,7 @@ Do đó thiết kế chia thông tin công ty theo đúng đường mà bằng c
 
 | Dimension | PK (surrogate) | Thuộc tính natural key / nguồn | Unknown member |
 | --- | --- | --- | --- |
-| `DimDate` | `DateKey` | `posting_date` | `0`, `FullDate` NULL |
+| `DimDate` | `DateKey` | `posting_date` | `DateKey = 0`, `FullDate = 1900-01-01` (sentinel kỹ thuật) |
 | `DimCompanyName` | `CompanyNameKey` | `company_name` | `0`, `CompanyName = 'Unknown'` |
 | `DimCompanyProfile` | `CompanyProfileKey` | `company_size` + 4 cờ (tổ hợp) | `0` |
 | `DimInternshipTitle` | `InternshipTitleKey` | `internship_title` | `0`, `InternshipTitle = 'Unknown'` |
@@ -770,7 +770,7 @@ Các phép kiểm tra dưới đây đã được thực thi bằng chương tr�
 5. **`DimCompanyProfile`** được tạo như một mini-dimension 64 dòng. Cả 64 trên 64 tổ hợp khả dĩ đều xuất hiện. `CompanySize` là nominal; không áp đặt thứ tự ordinal.
 6. **`company_age` và `domain_age_months`** là measure của Fact ở grain tin đăng, không phải thuộc tính Dimension.
 7. **Chín Dimension**, mỗi Dimension có một surrogate key số nguyên, mỗi Dimension nối trực tiếp với Fact. Star thuần túy, không snowflake.
-8. **`DimDate`** dùng quy ước số nguyên `YYYYMMDD` và bao phủ 2018-01-01 đến 2026-12-31 (3,287 dòng), bao gồm cả 99 ngày tương lai phân biệt.
+8. **`DimDate`** dùng quy ước số nguyên `YYYYMMDD`. Lịch phân tích thông thường bao phủ 2018-01-01 đến 2026-12-31 (3,287 dòng thông thường), bao gồm cả 99 ngày tương lai phân biệt; khi tính thêm dòng sentinel Unknown có key 0, Dimension này có tổng cộng 3,288 dòng.
 9. **`DimIndustry` giữ tách biệt khỏi `DimInternshipTitle`** (81/81 ô có dữ liệu, Cramér's V 0.001236).
 10. **`DimWorkMode` giữ tách biệt khỏi `DimEmploymentType`** (12/12 tổ hợp, Cramér's V 0.000000).
 11. **`DimRecruiterEmail`** chứa cả `RecruiterEmailType` lẫn `SuspiciousEmailDomain` trong một Dimension hai dòng, bảo toàn song ánh chính xác mà không tạo hai đường join.
